@@ -1,8 +1,9 @@
-package com.kakapo.droidquiz
+package com.kakapo.droidquiz.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.kakapo.droidquiz.R
 
 class QuestionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,8 +1,9 @@
-package com.kakapo.droidquiz
+package com.kakapo.droidquiz.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.kakapo.droidquiz.R
 import org.jetbrains.anko.clearTask
 import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.newTask

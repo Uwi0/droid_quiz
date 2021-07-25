@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -49,4 +50,11 @@ dependencies {
 
     //anko
     implementation "org.jetbrains.anko:anko:0.10.8"
+
+    //room
+    //Room
+    def room_version = "2.3.0"
+    implementation "androidx.room:room-common:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-runtime:$room_version"
 }
