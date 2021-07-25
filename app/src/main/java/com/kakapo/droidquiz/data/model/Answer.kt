@@ -1,10 +1,18 @@
 package com.kakapo.droidquiz.data.model
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import androidx.room.*
+import androidx.room.ForeignKey.CASCADE
 
-@Entity(tableName = "answer")
+@Entity(
+    tableName = "answer",
+    foreignKeys = [
+        ForeignKey(entity = Question::class,
+        parentColumns = ["question_id"],
+        childColumns = ["question_id"],
+        onDelete = CASCADE
+        )
+    ],
+indices = [Index("question_id")])
 data class Answer(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "answer_id")
