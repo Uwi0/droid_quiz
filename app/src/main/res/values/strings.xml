@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Droid Quiz</string>
+    <string name="start">START</string>
+    <string name="title">Welcome to DroidQuiz!</string>
+    <string name="prepopulate">prepopulate</string>
+    <string name="clear">clear</string>
 </resources>
