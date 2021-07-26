@@ -6,6 +6,7 @@ import com.kakapo.droidquiz.data.model.Answer
 import com.kakapo.droidquiz.data.model.Question
 
 @Database(entities = [(Question::class), (Answer::class)], version = 1)
-abstract class QuizDatabase: RoomDatabase() {
+abstract class QuizDatabase : RoomDatabase() {
 
+    abstract fun quizDao(): QuizDao
 }
